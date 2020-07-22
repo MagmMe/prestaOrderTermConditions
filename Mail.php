@@ -565,6 +565,18 @@ class MailCore extends ObjectModel
                 $message->addPart($templateHtml, 'text/html', 'utf-8');
             }
 
+            // Magme
+            // Adding extra files which will be send to customer ect. Terms and Conditions, order confirmation etc
+
+            if ($template == 'order_conf') {
+                $message->attach(\Swift_Attachment::newInstance(file_get_contents('terms.pdf'), 'terms.pdf', 'application/pdf'));
+                $message->attach(\Swift_Attachment::newInstance(file_get_contents('return_money.pdf'), 'return_money.pdf', 'application/pdf'));
+            }  
+
+
+            // Magme
+
+
             if ($fileAttachment && !empty($fileAttachment)) {
                 // Multiple attachments?
                 if (!is_array(current($fileAttachment))) {
