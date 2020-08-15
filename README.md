@@ -11,7 +11,7 @@ Thanks to this rule, you can send files in .pdf to Your Customers. Files will be
 						
 						
 How to add this line of code?
-1. Go to Modules -> mail.php
+1. Go to classes -> mail.php
 2. Find line no. 566.
 3. Below this line just paste this code.
 4. Change names of Your files and do not forget to add these files to your presta. 
