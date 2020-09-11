@@ -1,5 +1,5 @@
 # prestaOrderTermConditions
-Solution that allows add extra pdf files to  customer confirmation mail in Presta 1.7.6 
+Solution that allows add extra pdf files to  customer confirmation mail in Presta 1.7.6 or higher
 
 This is must have for every PrestaShop. 
 Thanks to this rule, you can send files in .pdf to Your Customers. Files will be send in coffirmation mail. 			
